@@ -67,13 +67,21 @@ main {
 }
 
 article {
+  height: 50px; /*toggled by JS upon click-event*/
+  overflow: hidden; /*toggled by JS upon click-event*/
   display: grid;
+  grid-template-rows: 50px max-content;
   padding: 10px;
   grid-gap: 0;
   margin: 10px 0;
   background-color: rgb(54, 69, 79);
   border-radius: 20px;
   color: white;
+}
+
+.expanded-article {
+  height: auto;
+  overflow: auto;
 }
 
 article .employer {
