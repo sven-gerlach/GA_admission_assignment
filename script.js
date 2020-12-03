@@ -16,7 +16,7 @@ function expandJefferiesArticle() {
     element.classList.toggle('expanded-article');
 }
 
-// toggle between showing and not showing the expanded article with id=merrill //
+// toggle between showing and not showing the expanded article with id=traderisks //
 document.getElementById('traderisks').onclick = expandTraderisksArticle;
 
 function expandTraderisksArticle() {
@@ -32,7 +32,7 @@ function expandMerrillArticle() {
     element.classList.toggle('expanded-article');
 }
 
-// calculate height of footer and header //
+// calculate height of footer and header needed to determine the offset to make the header sticky on all screen sizes //
 let heightHeader = document.getElementById('header').clientHeight;
 let heightNav = document.getElementById('nav').clientHeight;
-document.getElementById('header').style.top = -heightHeader + heightNav + 'px'; //todo: based on the responsive design mode in Mozilla the height this code returns does not appear to work in iPhone screen size mode. Could it be a view-port issue rather than a wrong calc? //
+document.getElementById('header').style.top = -heightHeader + heightNav + 'px'; //todo: Gives the correct results but slightly off on iPhone in vertical model and totally off in landscape mode //
