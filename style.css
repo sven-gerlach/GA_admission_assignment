@@ -11,7 +11,6 @@ header {
   color: white;
   position: -webkit-sticky;
   position: sticky;
-  top: -213px; /*todo: currently works for iPhone6/7/8. Need JS to read rendered height of header / nav tags*/
 }
 
 header img {
@@ -33,7 +32,7 @@ header p {
 }
 
 header nav {
-  padding: 10px 0 0;
+  padding: 5px 0;
   background: rgba(0,0,0,0.4);
 }
 
@@ -75,7 +74,7 @@ article {
   grid-template-rows: 50px max-content;
   padding: 10px;
   grid-gap: 0;
-  margin: 10px 0;
+  margin: 15px 0;
   background-color: rgb(54, 69, 79);
   border-radius: 20px;
   color: white;
@@ -145,8 +144,45 @@ article .bold {
 /* Formatting footer */
 footer {
   background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-ul {
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: none;
+}
 
+footer ul.right {
+  margin-left: auto;
+}
+
+footer li {
+  display: inline;
+  margin: 3px 10px;
+}
+
+footer a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer img { /* todo: how can I force the image to vertically align (center) neatly within footer */
+  height: 28px;
+}
+
+/* media queries */
+@media (min-width: 600px) {
+  article {
+    margin: 20px 0;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
 }

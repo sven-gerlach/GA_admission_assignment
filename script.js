@@ -31,3 +31,8 @@ function expandMerrillArticle() {
     let element = document.getElementById('merrill');
     element.classList.toggle('expanded-article');
 }
+
+// calculate height of footer and header //
+let heightHeader = document.getElementById('header').clientHeight;
+let heightNav = document.getElementById('nav').clientHeight;
+document.getElementById('header').style.top = -heightHeader + heightNav + 'px'; //todo: based on the responsive design mode in Mozilla the height this code returns does not appear to work in iPhone screen size mode. Could it be a view-port issue rather than a wrong calc? //
