@@ -200,7 +200,7 @@ footer img { /* todo: how can I force the image to vertically align (center) nea
 /* format specific for contact page */
 #contact {
   padding: 10px;
-  margin: 15px 0;
+  margin: 15px 0 60px;
   background-color: rgb(54, 69, 79);
   border-radius: 20px;
   color: white;
@@ -211,7 +211,7 @@ footer img { /* todo: how can I force the image to vertically align (center) nea
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  margin: 20px 0 50px;
+  margin: 10px 0;
 }
 
 /* button styling */
@@ -246,8 +246,9 @@ footer img { /* todo: how can I force the image to vertically align (center) nea
 }
 
 #old, #recent, #today {
-  display: flex;
+  display: none;
   justify-content: center;
+  margin: 40px 0 30px;
 }
 
 a[href^="mailto"]::before {
