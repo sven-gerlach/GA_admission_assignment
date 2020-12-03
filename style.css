@@ -38,7 +38,7 @@ header nav {
 }
 
 
-header ul {/*todo: center horizontally list items for large screens*/
+header ul {
   padding: 0;
   margin: 0;
   display: grid;
@@ -77,6 +77,9 @@ article {
   background-color: rgb(54, 69, 79);
   border-radius: 20px;
   color: white;
+  transition: height 2s; /*todo: transition doesn't work yet */
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
 }
 
 .expanded-article {
