@@ -1,23 +1,34 @@
 // todo: I first tried using the master script but I couldn't get that script to access the DOM of contacts (instead of index.html). //
 // syntax for choosing the contact method on the contact page //
-document.getElementById('oldMethod').onclick = showOldMethod;
-document.getElementById('recentMethod').onclick = showRecentMethod;
-document.getElementById('todayMethod').onclick = showTodayMethod;
+
+const styledButtons = document.querySelectorAll(".styled");
+styledButtons.forEach(button => {
+    button.addEventListener("click", event => {
+        const clickedButton = event.currentTarget;
+        if (clickedButton.id === "oldMethod") {showOldMethod()}
+        else if (clickedButton.id === "recentMethod") {showRecentMethod()}
+        else {showTodayMethod()};
+    })
+})
+
+const old = document.getElementById("old");
+const recent = document.getElementById("recent");
+const today = document.getElementById("today");
 
 function showOldMethod() {
-    document.getElementById('old').style.display = 'flex';
-    document.getElementById('recent').style.display = 'none';
-    document.getElementById('today').style.display = 'none';
+    old.style.display = 'flex';
+    recent.style.display = 'none';
+    today.style.display = 'none';
 }
 
 function showRecentMethod() {
-    document.getElementById('old').style.display = 'none';
-    document.getElementById('recent').style.display = 'flex';
-    document.getElementById('today').style.display = 'none';
+    old.style.display = 'none';
+    recent.style.display = 'flex';
+    today.style.display = 'none';
 }
 
 function showTodayMethod() {
-    document.getElementById('old').style.display = 'none';
-    document.getElementById('recent').style.display = 'none';
-    document.getElementById('today').style.display = 'flex';
+    old.style.display = 'none';
+    recent.style.display = 'none';
+    today.style.display = 'flex';
 }
