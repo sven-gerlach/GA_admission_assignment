@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sven-gerlach/GA_admission_assignment/issues"
   },
-  "homepage": "https://github.com/sven-gerlach/GA_admission_assignment#readme"
+  "homepage": "https://github.com/sven-gerlach/GA_admission_assignment#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
