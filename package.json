@@ -1,0 +1,19 @@
+{
+  "name": "admission_assignment",
+  "version": "1.0.0",
+  "description": "General Assembly admission assignment prior to signing up to the 12 week intensive coding course.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sven-gerlach/GA_admission_assignment.git"
+  },
+  "author": "Sven Gerlach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sven-gerlach/GA_admission_assignment/issues"
+  },
+  "homepage": "https://github.com/sven-gerlach/GA_admission_assignment#readme"
+}
